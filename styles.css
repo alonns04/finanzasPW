@@ -1,20 +1,22 @@
-body{
+body {
     background-color: #ffffff;
     font-family: initial;
 }
-
-#divsup{
+/*
+#divsup {
     background-color: gray;
     color: white;
     text-align: center;
-}
+} */
 
-.imagenesnav a{
+
+.imagenesnav a {
     margin: 9px;
 }
-main{
+
+main {
     padding: 40px;
-    padding-top:90px;
+    padding-top: 90px;
     padding-bottom: 90px;
     background-color: rgb(207, 207, 207);
 }
@@ -27,11 +29,13 @@ main{
 }
 */
 
+/*FOOTER*/
 .fimg {
     margin: 35px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
 #fdivimg {
     text-align: center;
 }
@@ -40,21 +44,36 @@ main{
 .fcopy {
     font-size: 15px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 90px;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-}
 
-table{
+table {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
 }
-  
-td{
-    width: 25%; 
+
+td {
+    width: 25%;
 }
 
+table a {
+    text-decoration: none;
+    color: black;
+}
+
+/*  DIV INFERIOR DESLIZANTE */
+
+
+#divsup {
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+#divsup p{
+    margin: 0 !important;
+}
+.carousel-inner { /* Evitar que los elementos se dividan en varias líneas */
+    overflow: hidden; /* Ocultar el contenido que excede el contenedor */
+  }

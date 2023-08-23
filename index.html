@@ -7,14 +7,41 @@
     <title>index</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles.css">
 
 </head>
 
 <body>
     <header>
         <div id="divsup">
-            <p>- - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+            <div class="container">
+                <div id="marqueeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p class="d-block w-100 text-center">¡Bienvenido a ArgNews, tu fuente confiable para
+                                política, finanzas y actualidad en Argentina!</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="d-block w-100 text-center"> ARGENTINA. FINANZAS Y POLITICA </p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="d-block w-100 text-center">Mantente informado con información esencial y útil
+                                sobre los temas que más importan a los argentinos.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="d-block w-100 text-center"> ARGENTINA. FINANZAS Y POLITICA </p>
+                        </div>
+
+                        <div class="carousel-item">
+                            <p class="d-block w-100 text-center">¡ArgNews, tu ventana a la realidad argentina!</p>
+                        </div>
+
+                        <div class="carousel-item">
+                            <p class="d-block w-100 text-center"> ARGENTINA. FINANZAS Y POLITICA </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <nav class="navbar navbar-expand-lg">
             <div class="recargar container-fluid">
@@ -26,36 +53,58 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Monedas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Moneda Fiat</a></li>
+                                <li><a class="dropdown-item" href="#">Criptos</a></li>
+                                <li><a class="dropdown-item" href="#">NFTs</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Dropdown
+                                Inversiones
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Cedears</a></li>
+                                <li><a class="dropdown-item" href="#">Acciones</a></li>
+                                <li><a class="dropdown-item" href="#">ROFEX</a></li>
+                                <li><a class="dropdown-item" href="#">Cauciones</a></li>
+                                <li><a class="dropdown-item" href="#">Metales</a></li>
+                                <li><a class="dropdown-item" href="#">Bonos</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">BROKERS</a></li>
                             </ul>
                         </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" aria-current="page" href="#">Impuestos</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Nosotros</a>
                         </li>
                     </ul>
                     <div class="d-flex justify-content-center nav-item imagenesnav">
-                            <a href=""><img width="25px" class="img-fluid image-container" src="./img/youtube.png" alt=""></a>
-                            <a href=""><img width="19px" class="img-fluid" src="./img/twitter.png" alt=""></a>
-                            <a href=""><img width="20px" class="img-fluid" src="./img/facebook.png" alt=""></a>
-                            <a href=""><img width="25px" class="img-fluid" src="./img/instagram.png" alt=""></a>
-                            <a href=""><img width="23px" class="img-fluid" src="./img/correo.png" alt=""></a>
+                        <a href=""><img width="25px" class="img-fluid image-container" src="./img/youtube.png"
+                                alt=""></a>
+                        <a href=""><img width="19px" class="img-fluid" src="./img/twitter.png" alt=""></a>
+                        <a href=""><img width="20px" class="img-fluid" src="./img/facebook.png" alt=""></a>
+                        <a href=""><img width="25px" class="img-fluid" src="./img/instagram.png" alt=""></a>
+                        <a href=""><img width="23px" class="img-fluid" src="./img/correo.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -66,212 +115,229 @@
 
     <main>
 
-        Inicio: Una introducción a la importancia de la educación financiera y cómo la página puede ayudar a los
-        visitantes a entender y tomar decisiones informadas sobre sus finanzas.
+        <p>Inicio: Una introducción a la importancia de la educación financiera y cómo la página puede ayudar a los
+            visitantes a entender y tomar decisiones informadas sobre sus finanzas.
 
-        Conceptos Básicos:
+            Conceptos Básicos:
 
-        Definiciones de conceptos financieros básicos como ingresos, gastos, ahorros, presupuesto, etc.
-        Cómo elaborar un presupuesto personal.
-        Importancia del ahorro y cómo empezar a ahorrar.
-        Productos Financieros en Argentina:
+            Definiciones de conceptos financieros básicos como ingresos, gastos, ahorros, presupuesto, etc.
+            Cómo elaborar un presupuesto personal.
+            Importancia del ahorro y cómo empezar a ahorrar.
+            Productos Financieros en Argentina:
 
-        Descripción de los diferentes tipos de productos financieros disponibles en Argentina, como cuentas bancarias,
-        tarjetas de crédito, préstamos, etc.
-        Explicación de las tasas de interés y cómo afectan las finanzas personales.
-        Inversiones:
+            Descripción de los diferentes tipos de productos financieros disponibles en Argentina, como cuentas
+            bancarias,
+            tarjetas de crédito, préstamos, etc.
+            Explicación de las tasas de interés y cómo afectan las finanzas personales.
+            Inversiones:
 
-        Introducción a las inversiones, incluyendo conceptos como acciones, bonos, fondos de inversión, etc.
-        Cómo empezar a invertir en el mercado argentino.
-        Impuestos:
+            Introducción a las inversiones, incluyendo conceptos como acciones, bonos, fondos de inversión, etc.
+            Cómo empezar a invertir en el mercado argentino.
+            Impuestos:
 
-        Explicación de los impuestos más relevantes en Argentina y cómo impactan en las finanzas personales.
-        Planificación para el Futuro:
+            Explicación de los impuestos más relevantes en Argentina y cómo impactan en las finanzas personales.
+            Planificación para el Futuro:
 
-        Cómo establecer metas financieras a largo plazo y crear un plan para alcanzarlas.
-        Introducción a la jubilación y los sistemas de pensiones en Argentina.
-        <br><br><br><br><br><br><br>
-        <h3>Ingresos</h3>
-        </html><br><br>
-        <p>
-            Origen: <br>
-Ingresos Personales: <br> Aquellos generados por una persona para cubrir sus necesidades personales y familiares.
-Ingresos Empresariales: <br> Los obtenidos por una empresa como resultado de sus actividades comerciales.
-Tipo:
-
-Ingresos Ordinarios: <br> Ingresos regulares provenientes de actividades comerciales normales, como las ventas de productos o servicios.
-Ingresos Extraordinarios: <br>Ingresos no recurrentes o poco comunes, como ventas de activos no esenciales o indemnizaciones por litigios.
-Naturaleza:
-
-Ingresos Operativos: <br>Generados directamente por las operaciones comerciales principales, como las ventas.
-Ingresos No Operativos: <br> Ingresos que no están relacionados con las actividades principales del negocio, como inversiones o alquiler de propiedades.
-<br><br>Categoría: <br>
-
-Ingresos por Ventas: <br>Ingresos derivados de la venta de productos o servicios.
-Ingresos por Intereses: <br> Ganancias obtenidas por prestar dinero o invertir en instrumentos financieros.
-Ingresos por Alquiler: <br>Dinero ganado al alquilar propiedades o activos.
-Ingresos por Regalías: <br> ngresos obtenidos por el uso de propiedad intelectual, como patentes o derechos de autor.
-Ingresos por Dividendos: <br> Pagos realizados a los accionistas de una empresa como parte de las ganancias obtenidas.
-Otros Ingresos: <br>Cualquier ingreso que no se ajuste a las categorías anteriores, como donaciones o premios.
-<br> <br>Fuente: <br>
-
-Ingresos Laborales: Ganancias obtenidas a través de empleo o trabajo personal.
-Ingresos de Inversiones: Ingresos generados por inversiones financieras, como acciones, bonos y fondos mutuos.
-Ingresos de Emprendimiento: Ingresos generados por actividades empresariales y comerciales propias.
-Impuestos y Deducciones:
-
-Algunos ingresos pueden estar sujetos a impuestos, y es importante tener en cuenta las deducciones aplicables para calcular los ingresos netos reales.
-Es importante adaptar esta clasificación a tus necesidades específicas. En el ámbito empresarial, es común utilizar un sistema contable para registrar y categorizar los ingresos de manera precisa. En el ámbito personal, la clasificación puede ayudarte a administrar tus finanzas de manera más efectiva y planificar tu presupuesto.
+            Cómo establecer metas financieras a largo plazo y crear un plan para alcanzarlas.
+            Introducción a la jubilación y los sistemas de pensiones en Argentina.
         </p>
+        <br><br><br><br><br><br>
+        <h3 style="text-align: center;">| Ingresos |</h3>
+
+</html><br><br>
+<p>
+    Origen: <br>
+    Ingresos Personales: <br> Aquellos generados por una persona para cubrir sus necesidades personales y familiares.
+    Ingresos Empresariales: <br> Los obtenidos por una empresa como resultado de sus actividades comerciales.
+    Tipo:
+
+    Ingresos Ordinarios: <br> Ingresos regulares provenientes de actividades comerciales normales, como las ventas de
+    productos o servicios.
+    Ingresos Extraordinarios: <br>Ingresos no recurrentes o poco comunes, como ventas de activos no esenciales o
+    indemnizaciones por litigios.
+    Naturaleza:
+
+    Ingresos Operativos: <br>Generados directamente por las operaciones comerciales principales, como las ventas.
+    Ingresos No Operativos: <br> Ingresos que no están relacionados con las actividades principales del negocio, como
+    inversiones o alquiler de propiedades.
+    <br><br>Categoría: <br>
+
+    Ingresos por Ventas: <br>Ingresos derivados de la venta de productos o servicios.
+    Ingresos por Intereses: <br> Ganancias obtenidas por prestar dinero o invertir en instrumentos financieros.
+    Ingresos por Alquiler: <br>Dinero ganado al alquilar propiedades o activos.
+    Ingresos por Regalías: <br> ngresos obtenidos por el uso de propiedad intelectual, como patentes o derechos de
+    autor.
+    Ingresos por Dividendos: <br> Pagos realizados a los accionistas de una empresa como parte de las ganancias
+    obtenidas.
+    Otros Ingresos: <br>Cualquier ingreso que no se ajuste a las categorías anteriores, como donaciones o premios.
+    <br> <br>Fuente: <br>
+
+    Ingresos Laborales: Ganancias obtenidas a través de empleo o trabajo personal.
+    Ingresos de Inversiones: Ingresos generados por inversiones financieras, como acciones, bonos y fondos mutuos.
+    Ingresos de Emprendimiento: Ingresos generados por actividades empresariales y comerciales propias.
+    Impuestos y Deducciones:
+
+    Algunos ingresos pueden estar sujetos a impuestos, y es importante tener en cuenta las deducciones aplicables para
+    calcular los ingresos netos reales.
+    Es importante adaptar esta clasificación a tus necesidades específicas. En el ámbito empresarial, es común utilizar
+    un sistema contable para registrar y categorizar los ingresos de manera precisa. En el ámbito personal, la
+    clasificación puede ayudarte a administrar tus finanzas de manera más efectiva y planificar tu presupuesto.
+</p>
 
 
-    </main>
+</main>
 
 
-    <footer>
-        <div id="copyright">
-            <div id="fdivimg">
-                <a href=""><img class="fimg" width="25" src="./img/youtube.png" alt=""></a>
-                <a href=""><img class="fimg" width="19" src="./img/twitter.png" alt=""></a>
-                <a href=""><img class="fimg" width="20" src="./img/facebook.png" alt=""></a>
-                <a href=""><img class="fimg" width="25" src="./img/instagram.png" alt=""></a>
-                <a href=""><img class="fimg" width="23" src="./img/correo.png" alt=""></a>
-            </div>
-            <div>
-                <table id="ftable">
-                    <tr>
-                        <th>
-                            <p>
-                                <a href="">ArgentinaACCIOnes</a>
-                            </p>
-                        </th>
-                        <th>
-                            <p>
-                                <a class="fth" href="">Actividades</a>
-                            </p>
-                        </th>
-                        <th>
-                            <p>
-                                <a href="">Contactanos</a>
-                            </p>
-                        </th>
-                        
-                        <th>
-                            <p>
-                                <a href="">Contactanos</a>
-                            </p>
-                        </th>
+<footer>
 
-                    </tr>
 
-                    <tr>
-                        <td>
-                            <p>
-                                <a href="">destinos1</a>
-                            </p>
-                        </td>
-                        <td>
-                            <p>
-                                <a href="">actividades1</a>
-                            </p>
-                        </td>
-                        <td>
-                            <p>
-                                <a href="">contactanos1</a>
-                            </p>
-                        </td>
-                        <td>
-                            <p>
-                                <a href="">contactanos1</a>
-                            </p>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <p>
-                                <a href="">destinos2</a>
-                            </p>
-                        </td>
-                        <td>
-                            <p>
-                                <a href="">actividades2</a>
-                            </p>
-                        </td>
-                        <td>
-                            <p>
-                                <a href="">contactanos2</a>
-                            </p>
-                        </td>
-                        <td>
-                            <p>
-                                <a href="">contactanos1</a>
-                            </p>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <p>
-                                <a href="">destinos3</a>
-                            </p>
-                        </td>
-                        <td>
-                            <p>
-                                <a href="">actividades3</a>
-                            </p>
-                        </td>
-                        <td>
-                            <p>
-                                <a href="">contactanos1</a>
-                            </p>
-                        </td>
-                        <td>
-                            <p>
-                                <a href="">contactanos3</a>
-                            </p>
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td>
-                            <p>
-                                <a href="">destinos3</a>
-                            </p>
-                        </td>
-                        <td>
-                            <p>
-                                <a href="">actividades3</a>
-                            </p>
-                        </td>
-                        <td>
-                            <p>
-                                <a href="">contactanos3</a>
-                            </p>
-                        </td>
-                        <td>
-                            <p>
-                                <a href="">contactanos1</a>
-                            </p>
-                        </td>
-                    </tr>
-
-                </table>
-
-            </div>
-            <div>
-                <p class="fcopy">
-                    © 2023 - All rights reserved
-                </p>
-            </div>
+    <div id="copyright">
+        <div id="fdivimg">
+            <a href=""><img class="fimg" width="25" src="./img/youtube.png" alt=""></a>
+            <a href=""><img class="fimg" width="19" src="./img/twitter.png" alt=""></a>
+            <a href=""><img class="fimg" width="20" src="./img/facebook.png" alt=""></a>
+            <a href=""><img class="fimg" width="25" src="./img/instagram.png" alt=""></a>
+            <a href=""><img class="fimg" width="23" src="./img/correo.png" alt=""></a>
         </div>
-    </footer>
 
 
-    <script src="nav.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+
+        <div>
+            <table id="ftable">
+                <tr>
+                    <th>
+                        <p>
+                            <a href="">ArgentinaACCIOnes</a>
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            <a class="fth" href="">Actividades</a>
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            <a href="">Contactanos</a>
+                        </p>
+                    </th>
+
+                    <th>
+                        <p>
+                            <a href="">Contactanos</a>
+                        </p>
+                    </th>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>
+                            <a href="">destinos1</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <a href="">actividades1</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <a href="">contactanos1</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <a href="">contactanos1</a>
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>
+                            <a href="">destinos2</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <a href="">actividades2</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <a href="">contactanos2</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <a href="">contactanos1</a>
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>
+                            <a href="">destinos3</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <a href="">actividades3</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <a href="">contactanos1</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <a href="">contactanos3</a>
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>
+                            <a href="">destinos3</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <a href="">actividades3</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <a href="">contactanos3</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <a href="">contactanos1</a>
+                        </p>
+                    </td>
+                </tr>
+
+            </table>
+
+
+        </div>
+        <div>
+            <p class="fcopy">
+                © 2023 - All rights reserved
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

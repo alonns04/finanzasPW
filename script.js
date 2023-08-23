@@ -47,3 +47,6 @@ document.querySelector("header").innerHTML = nav; */
 document.getElementByClass("recargar").addEventListener("click", function() {
     location.reload();
 });
+
+
+
