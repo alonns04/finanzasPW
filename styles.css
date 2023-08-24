@@ -75,3 +75,10 @@ table a {
 #divsup p{
     margin: 0 !important;
 }
+/**/
+.criptocotizaciones p,h1,h5{
+    text-align: center;
+}
+.criptocotizaciones p{
+    margin: 0 !important;
+}

@@ -1,6 +1,6 @@
 // tu-archivo-js.js
 
-const bitcoinE = document.getElementById("btn");
+const bitcoinE = document.getElementById("btc");
 
 function obtenerPrecioBitcoin() {
     const apiUrl = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT";
@@ -80,6 +80,22 @@ function obtenerPrecioSOL() {
 }
 
 
+const dogeE = document.getElementById("doge")
+
+function obtenerPrecioDOGE() {
+    const apiUrl = "https://api.binance.com/api/v3/ticker/price?symbol=DOGEUSDT";
+    
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const precioDOGE = parseFloat(data.price);
+            dogeE.textContent = precioDOGE.toFixed(4);
+        })
+        .catch(error => {
+            console.error("Error al obtener el precio de DOGE", error);
+        });
+}
+
 
 
 
@@ -88,6 +104,8 @@ obtenerPrecioBitcoin();
 obtenerPrecioBNB();
 obtenerPrecioSOL();
 obtenerPrecioUSDTARS();
+obtenerPrecioDOGE();
+setInterval(obtenerPrecioDOGE, 4000);
 setInterval(obtenerPrecioSOL, 4000);
 setInterval(obtenerPrecioUSDTARS, 4000);
 setInterval(obtenerPrecioBNB, 1500);
