@@ -1,52 +1,24 @@
-/*let nav = `
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-
-`
-document.querySelector("header").innerHTML = nav; */
-
 document.getElementByClass("recargar").addEventListener("click", function() {
     location.reload();
 });
 
 
 
+
+
+// Obtén el elemento HTML donde deseas mostrar el precio
+const precioElement = document.getElementById("precio-bitcoin");
+
+// URL de la API de Binance para el precio de BTCUSDT
+const apiUrl = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT";
+
+// Realiza la solicitud a la API de Binance
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => {
+    const precioBitcoin = parseFloat(data.price);
+    precioElement.textContent = precioBitcoin.toFixed(2); // Muestra el precio con 2 decimales
+  })
+  .catch(error => {
+    console.error("Error al obtener el precio de Bitcoin:", error);
+  });
