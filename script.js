@@ -21,3 +21,14 @@ obtenerPrecioBitcoin();
 
 // Actualizar el precio cada 5 segundos (5000 milisegundos)
 setInterval(obtenerPrecioBitcoin, 1500);
+
+const apiUrl = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT";
+
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error("Error al obtener el precio de Bitcoin:", error);
+  });
