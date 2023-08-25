@@ -96,8 +96,37 @@ function obtenerPrecioDOGE() {
         });
 }
 
+const xrpE = document.getElementById("xrp")
 
+function obtenerPrecioXRP() {
+    const apiUrl = "https://api.binance.com/api/v3/ticker/price?symbol=XRPUSDT";
+    
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const precioXRP = parseFloat(data.price);
+            xrpE.textContent = precioXRP.toFixed(4);
+        })
+        .catch(error => {
+            console.error("Error al obtener el precio de XRP", error);
+        });
+}
 
+const adaE = document.getElementById("ada")
+
+function obtenerPrecioADA() {
+    const apiUrl = "https://api.binance.com/api/v3/ticker/price?symbol=ADAUSDT";
+    
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const precioADA = parseFloat(data.price);
+            adaE.textContent = precioADA.toFixed(4);
+        })
+        .catch(error => {
+            console.error("Error al obtener el precio de ADA", error);
+        });
+}
 
 obtenerPrecioEthereum();
 obtenerPrecioBitcoin();
@@ -105,6 +134,10 @@ obtenerPrecioBNB();
 obtenerPrecioSOL();
 obtenerPrecioUSDTARS();
 obtenerPrecioDOGE();
+obtenerPrecioXRP();
+obtenerPrecioADA();
+setInterval(obtenerPrecioADA, 4000);
+setInterval(obtenerPrecioXRP, 4000);
 setInterval(obtenerPrecioDOGE, 4000);
 setInterval(obtenerPrecioSOL, 4000);
 setInterval(obtenerPrecioUSDTARS, 4000);
