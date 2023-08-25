@@ -128,6 +128,24 @@ function obtenerPrecioADA() {
         });
 }
 
+
+const trxE = document.getElementById("tron")
+
+function obtenerPrecioTRX() {
+    const apiUrl = "https://api.binance.com/api/v3/ticker/price?symbol=TRXUSDT";
+    
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const precioTRX = parseFloat(data.price);
+            trxE.textContent = precioTRX.toFixed(4);
+        })
+        .catch(error => {
+            console.error("Error al obtener el precio de TRX", error);
+        });
+}
+
+
 obtenerPrecioEthereum();
 obtenerPrecioBitcoin();
 obtenerPrecioBNB();
@@ -136,6 +154,8 @@ obtenerPrecioUSDTARS();
 obtenerPrecioDOGE();
 obtenerPrecioXRP();
 obtenerPrecioADA();
+obtenerPrecioTRX();
+setInterval(obtenerPrecioTRX, 4000);
 setInterval(obtenerPrecioADA, 4000);
 setInterval(obtenerPrecioXRP, 4000);
 setInterval(obtenerPrecioDOGE, 4000);
