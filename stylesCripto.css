@@ -1,0 +1,62 @@
+body {
+    font-family: initial;
+    background-color: rgb(71, 71, 71);
+}
+
+header{
+    background-color: rgb(105, 105, 105);
+    margin-bottom: 30px;
+    
+}
+header a{
+    color: rgb(212, 212, 212) !important;
+}
+
+
+.imagenesnav a {
+    margin: 9px;
+}
+
+#divsup {
+    background-color: rgb(44, 44, 44);
+    color: rgb(201, 201, 201);
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#divsup p {
+    margin: 0 !important;
+}
+
+/**/
+.criptocotizaciones p,
+h1,
+h5 {
+    background-color: rgb(78, 78, 78);
+    text-align: center;
+    color: rgb(201, 201, 201);
+    font-weight: bold;
+    border-radius: 100px;
+}
+
+.criptocotizaciones p {
+    padding: 5px;
+}
+
+.contCripto {
+    padding: 1px;
+}
+
+#criptomain {
+    background-color: rgb(44, 44, 44);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+footer{
+    background-color: rgb(255, 255, 255);
+}
+#tituloCripto{
+    text-align: center;
+    color: rgb(212, 212, 212);
+}

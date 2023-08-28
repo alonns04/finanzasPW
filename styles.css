@@ -2,6 +2,7 @@ body {
     background-color: #ffffff;
     font-family: initial;
 }
+
 /*
 #divsup {
     background-color: gray;
@@ -67,14 +68,36 @@ table a {
 
 
 #divsup {
-    background-color: gray;
+    background-color: rgb(161, 161, 161);
     color: white;
     text-align: center;
 }
-#divsup p{
+
+#divsup p {
     margin: 0 !important;
 }
+
 /**/
-.criptocotizaciones p,h1,h5{
+.criptocotizaciones p,
+h1,
+h5 {
+    background-color: rgb(78, 78, 78);
     text-align: center;
+    color: rgb(201, 201, 201);
+    font-weight: bold;
+    border-radius: 100px;
+}
+
+.criptocotizaciones p {
+    padding: 5px;
+}
+
+.contCripto {
+    padding: 1px;
+}
+
+#criptomain {
+    background-color: rgb(142, 142, 142);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }

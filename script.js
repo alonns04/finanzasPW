@@ -145,6 +145,24 @@ function obtenerPrecioTRX() {
         });
 }
 
+const ltcE = document.getElementById("ltc")
+
+function obtenerPrecioTRX() {
+    const apiUrl = "https://api.binance.com/api/v3/ticker/price?symbol=LTCUSDT";
+    
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const precioTRX = parseFloat(data.price);
+            trxE.textContent = precioTRX.toFixed(4);
+        })
+        .catch(error => {
+            console.error("Error al obtener el precio de TRX", error);
+        });
+}
+
+
+
 
 obtenerPrecioEthereum();
 obtenerPrecioBitcoin();
