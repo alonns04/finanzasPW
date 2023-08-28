@@ -5,13 +5,21 @@ body {
 
 header{
     background-color: rgb(105, 105, 105);
-    margin-bottom: 30px;
     
 }
 header a{
-    color: rgb(212, 212, 212) !important;
+    color: rgb(195, 242, 255) !important;
+}
+header .dropdown-menu{
+    background-color:rgb(44, 44, 44) !important;
 }
 
+nav{
+    padding: 0 !important;
+}
+main{
+    margin-top: 10px;
+}
 
 .imagenesnav a {
     margin: 9px;
@@ -19,14 +27,16 @@ header a{
 
 #divsup {
     background-color: rgb(44, 44, 44);
-    color: rgb(201, 201, 201);
+    color: rgb(157, 234, 255);
     text-align: center;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    margin-bottom: 10px;
 }
 
 #divsup p {
     margin: 0 !important;
+    font-weight: bold;
 }
 
 /**/
@@ -36,27 +46,33 @@ h5 {
     background-color: rgb(78, 78, 78);
     text-align: center;
     color: rgb(201, 201, 201);
-    font-weight: bold;
-    border-radius: 100px;
-}
-
-.criptocotizaciones p {
-    padding: 5px;
+    font-weight:lighter;
+    border-radius: 50px;
 }
 
 .contCripto {
     padding: 1px;
 }
 
+.contCripto span{
+    color: rgb(171, 217, 230);;
+}
+
+.contCripto img{
+    width: 20px;
+}
+
+.contCripto p{ 
+    margin: 0;
+    margin-top: 10px;
+    color: rgb(73, 216, 255);
+}
+
 #criptomain {
     background-color: rgb(44, 44, 44);
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 footer{
     background-color: rgb(255, 255, 255);
-}
-#tituloCripto{
-    text-align: center;
-    color: rgb(212, 212, 212);
 }
